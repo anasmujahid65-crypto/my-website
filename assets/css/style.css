@@ -1,0 +1,90 @@
+/* PROMPTFORGE UNIVERSAL TEMPLATE ARCHITECTURE - KHALIS BAZAAR */
+:root {
+  /* Brand Accent Colors */
+  --pf-primary: #C6FF00;
+  --pf-secondary: #FF1F7A;
+  
+  /* Surface & Background */
+  --pf-bg: #0A0A0F;
+  --pf-surface: #0F0F14;
+  --pf-surface-hover: #181822;
+  --pf-border: #3A3A42;
+
+  /* Typography Colors */
+  --pf-text: #FFFFFF;
+  --pf-text-muted: #A8A8B0;
+
+  /* Layout Variables */
+  --pf-radius: 4px;
+  --pf-radius-sm: 2px;
+  --pf-font-heading: 'Bebas Neue', 'Anton', sans-serif;
+  --pf-font-body: 'Barlow Condensed', 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--pf-bg);
+  color: var(--pf-text);
+  font-family: var(--pf-font-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--pf-font-heading);
+}
+
+.font-body {
+  font-family: var(--pf-font-body);
+}
+
+/* Gritty Streetwear & Neon Accents */
+.text-stroke-lime {
+  -webkit-text-stroke: 2px var(--pf-primary);
+  color: transparent;
+}
+
+.text-stroke-pink {
+  -webkit-text-stroke: 2px var(--pf-secondary);
+  color: transparent;
+}
+
+.skew-panel {
+  transform: skew(-6deg);
+}
+
+.unskew {
+  transform: skew(6deg);
+}
+
+/* Continuous Marquee Animation */
+@keyframes pf-marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: pf-marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A3A42;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pf-primary);
+}

@@ -1,0 +1,9 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production static website deployed with PromptForge",
+  "scripts": {
+    "serve": "npx serve ."
+  }
+}
